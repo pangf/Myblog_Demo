@@ -7,7 +7,10 @@
         position: relative;
         transition: box-shadow .3s ease-in-out;
 }
-
+.title-h1 {
+    font-size: 2rem;
+    margin-bottom: 1.1rem;
+}
 .title--3 {
     font-size: 1.5rem;
     margin-bottom: 1.4rem;
@@ -53,6 +56,31 @@
     white-space: nowrap;
     padding: .7rem 2rem;
     transition: .4s ease-in-out;
+}
+.box-inner::before, .box-inner::after {
+    content: '';
+    background-color: #F8FAFB;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 1.875rem;
+    z-index: -1;
+}
+.box::before {
+    content: '';
+    box-shadow: 0px 24px 40px rgba(134, 151, 168, 0.15);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 1rem;
+    width: 86%;
+    z-index: -1;
+}
+
+.title-5 {
+    font-size: 1rem;
 }
 
 /*blog index*/
@@ -106,7 +134,7 @@
 }
 
 .contacts-block {
-    font-size: .937rem;
+    font-size: .9rem;
     list-style: none;
     padding-left: 0;
     margin-bottom: 1.3rem;
@@ -130,3 +158,34 @@
     margin-right: .875rem;
 }
 
+.title-separate {
+    margin-bottom: 2.3rem;
+    position: relative;
+ }
+
+ .title-separate::before {
+    content: '';
+    background-color: #0045FF;
+    border-radius: .5rem;
+    height: 4px;
+    position: absolute;
+    bottom: -1.1rem;
+    left: 0;
+    width: 3.12rem;
+    z-index: 1;
+ }
+.case-item {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: flex;
+    height: calc(100% - 1.875rem);
+    margin-bottom: 1.875rem;
+    padding: 1.875rem 1.875rem 1.5rem;
+    position: relative;
+} 
+.box-second {
+    background-color: #fff;
+    border-radius: 0.937rem;
+    box-shadow: 0px 4px 8px rgba(134, 151, 168, 0.1);
+}
